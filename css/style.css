@@ -1,0 +1,246 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* Buger button */
+
+container
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  position: relative;
+  padding: 5px;
+}
+button
+{
+  width: 13rem;
+  height: 5rem;
+  margin-bottom: 0rem;
+}
+.top-bun
+{
+  border: 5px solid #f6bd70;
+  border-radius: 5rem 5rem 1rem 1rem;
+  animation: bun-lettuce-coming 0.75s;
+  height: 1.5rem;
+  width: 4rem;
+}
+.tomato
+{
+  width: 2rem;
+  height: 0.3rem;
+  border: 2px solid #ff79da;
+  border-radius: 2rem;
+  animation: content-coming 0.75s;
+}
+.lettuce
+{
+  width: 3rem;
+  height: 0.3rem;
+  border: 2px solid #b6f06a;
+  border-radius: 2rem;
+  animation: bun-lettuce-coming 0.75s;
+}
+.steak
+{
+  width: 4rem;
+  height: 0.5rem;
+  border: 2px solid #9356dc;
+  border-radius: 3rem;
+  animation: content-coming 0.75s;
+}
+.bottom-bun
+{
+  height: 1.5rem;
+  border: 5px solid #f6bd70;
+  border-radius: 1rem 1rem 5rem 5rem;
+  animation: bun-lettuce-coming 0.75s;
+  width: 4rem;
+
+}
+@keyframes bun-lettuce-coming {
+    0% {
+        transform:translateX(-30rem);
+        margin: 1rem;
+    }
+    70% {
+        margin: 1rem;
+    }
+    100% {
+        transform: translateX(0rem);
+        margin: 0rem;
+    }
+  }
+@keyframes content-coming {
+    from {
+        transform:translateX(30rem);
+    }
+    to {
+        transform:translateX(0rem);
+    }
+}
+@keyframes loader {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        z-index: 9999;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+/*burger button end*/
+/* test */ 
+  /* Styles pour l'en-tête de la page */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    }
+    
+    nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.2s ease;
+    }
+    
+    nav ul li a:hover {
+    color: #ffcc00;
+    }
+    
+    /* Styles pour la section de présentation */
+    #presentation {
+    background-image: url("https://images.unsplash.com/photo-1483729558449-99ef09a8c325");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin: 50px 0;
+    }
+    
+    #presentation h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    }
+    
+    #presentation p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin-bottom: 40px;
+    }
+    
+    #presentation button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    }
+    
+    #presentation button:hover {
+    background-color: #e6b800;
+    }
+    
+    /* Styles pour la section de menu */
+    #menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    }
+    
+    #menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    }
+    
+    .category {
+    margin-bottom: 50px;
+    }
+    
+    .category h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    }
+    
+    .category ul {
+    list-style: none;
+    }
+    
+    .category ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    }
+    
+    .category ul li .name {
+    font-size: 1.2rem;
+    }
+    
+    .category ul li .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    }
+    
+    /* Styles pour la section de réservation */
+    #reservation {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    }
+    
+    #reservation h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    }
+    
+    #reservation label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    }
+    
+    #reservation input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    }
+    
+    #reservation button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    }
+
+  
